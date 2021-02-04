@@ -1,2 +1,2 @@
 # StudySqlServer
-StudySqlServer 학습용 리포지토리
+SqlServer 학습용 리포지토리
