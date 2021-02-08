@@ -1,26 +1,26 @@
--- select, insert, update, delete
-INSERT INTO userTbl values ('LSG', 'ÀÌ½Â±â', 1987, '¼­¿ï', '011', '11111111', 182, '2008-8-8');
-INSERT INTO userTbl values ('KBS', '±è¹ü¼ö', 1979, '°æ³²', '011', '22222222', 173, '2012-4-4');
-INSERT INTO userTbl values ('KKH', '±è°æÈ£', 1971, 'Àü³²', '019', '33333333', 177, '2007-7-7');
-INSERT INTO userTbl values ('JYP', 'Á¶¿ëÇÊ', 1950, '°æ±â', '011', '44444444', 166, '2009-4-4');
-INSERT INTO userTbl values ('SSK', '¼º½Ã°æ', 1979, '¼­¿ï', NULL, NULL, 186, '2013-12-12');
-INSERT INTO userTbl values ('LJB', 'ÀÓÀç¹ü', 1963, '¼­¿ï', '016', '66666666', 182, '2009-9-9');
-INSERT INTO userTbl values ('YJS', 'À±Á¾½Å', 1969, '°æ³²', NULL, NULL, 170, '2005-5-5');
-INSERT INTO userTbl values ('EJW', 'ÀºÁö¿ø', 1972, '°æºÏ', '011', '88888888', 174, '2014-3-3');
-INSERT INTO userTbl values ('JKW', 'Á¶°ü¿ì', 1965, '°æ±â', '018', '99999999', 172, '2010-10-10');
-INSERT INTO userTbl values ('BBK', '¹ÙºñÅ´', 1973, '¼­¿ï', '010', '00000000', 176, '2013-5-5');
+ï»¿-- select, insert, update, delete
+INSERT INTO userTbl values ('LSG', 'ì´ìŠ¹ê¸°', 1987, 'ì„œìš¸', '011', '11111111', 182, '2008-8-8');
+INSERT INTO userTbl values ('KBS', 'ê¹€ë²”ìˆ˜', 1979, 'ê²½ë‚¨', '011', '22222222', 173, '2012-4-4');
+INSERT INTO userTbl values ('KKH', 'ê¹€ê²½í˜¸', 1971, 'ì „ë‚¨', '019', '33333333', 177, '2007-7-7');
+INSERT INTO userTbl values ('JYP', 'ì¡°ìš©í•„', 1950, 'ê²½ê¸°', '011', '44444444', 166, '2009-4-4');
+INSERT INTO userTbl values ('SSK', 'ì„±ì‹œê²½', 1979, 'ì„œìš¸', NULL, NULL, 186, '2013-12-12');
+INSERT INTO userTbl values ('LJB', 'ì„ì¬ë²”', 1963, 'ì„œìš¸', '016', '66666666', 182, '2009-9-9');
+INSERT INTO userTbl values ('YJS', 'ìœ¤ì¢…ì‹ ', 1969, 'ê²½ë‚¨', NULL, NULL, 170, '2005-5-5');
+INSERT INTO userTbl values ('EJW', 'ì€ì§€ì›', 1972, 'ê²½ë¶', '011', '88888888', 174, '2014-3-3');
+INSERT INTO userTbl values ('JKW', 'ì¡°ê´€ìš°', 1965, 'ê²½ê¸°', '018', '99999999', 172, '2010-10-10');
+INSERT INTO userTbl values ('BBK', 'ë°”ë¹„í‚´', 1973, 'ì„œìš¸', '010', '00000000', 176, '2013-5-5');
 go
 
-INSERT INTO buyTbl values ('KBS', '¿îµ¿È­' ,null, 30, 2);
-INSERT INTO buyTbl values ('KBS', '³ëÆ®ºÏ' ,'ÀüÀÚ', 1000, 1);
-INSERT INTO buyTbl values ('JYP', '¸ğ´ÏÅÍ' ,'ÀüÀÚ', 200, 1);
-INSERT INTO buyTbl values ('BBK', '¸ğ´ÏÅÍ' ,'ÀüÀÚ', 200, 5);
-INSERT INTO buyTbl values ('KBS', 'Ã»¹ÙÁö' ,'ÀÇ·ù', 50, 3);
-INSERT INTO buyTbl values ('BBK', '¸Ş¸ğ¸®' ,'ÀüÀÚ', 80, 10);
-INSERT INTO buyTbl values ('SSK', 'Ã¥' ,'¼­Àû', 15, 5);
-INSERT INTO buyTbl values ('EJW', 'Ã¥' ,'¼­Àû', 15, 2);
-INSERT INTO buyTbl values ('EJW', 'Ã»¹ÙÁö' ,'ÀÇ·ù', 50, 1);
-INSERT INTO buyTbl values ('BBK', '¿îµ¿È­' ,NULL, 30, 2);
-INSERT INTO buyTbl values ('EJW', 'Ã¥' ,'¼­Àû', 15, 1);
-INSERT INTO buyTbl values ('BBK', '¿îµ¿È­' ,null, 30, 2);
+INSERT INTO buyTbl values ('KBS', 'ìš´ë™í™”' ,null, 30, 2);
+INSERT INTO buyTbl values ('KBS', 'ë…¸íŠ¸ë¶' ,'ì „ì', 1000, 1);
+INSERT INTO buyTbl values ('JYP', 'ëª¨ë‹ˆí„°' ,'ì „ì', 200, 1);
+INSERT INTO buyTbl values ('BBK', 'ëª¨ë‹ˆí„°' ,'ì „ì', 200, 5);
+INSERT INTO buyTbl values ('KBS', 'ì²­ë°”ì§€' ,'ì˜ë¥˜', 50, 3);
+INSERT INTO buyTbl values ('BBK', 'ë©”ëª¨ë¦¬' ,'ì „ì', 80, 10);
+INSERT INTO buyTbl values ('SSK', 'ì±…' ,'ì„œì ', 15, 5);
+INSERT INTO buyTbl values ('EJW', 'ì±…' ,'ì„œì ', 15, 2);
+INSERT INTO buyTbl values ('EJW', 'ì²­ë°”ì§€' ,'ì˜ë¥˜', 50, 1);
+INSERT INTO buyTbl values ('BBK', 'ìš´ë™í™”' ,NULL, 30, 2);
+INSERT INTO buyTbl values ('EJW', 'ì±…' ,'ì„œì ', 15, 1);
+INSERT INTO buyTbl values ('BBK', 'ìš´ë™í™”' ,null, 30, 2);
 GO

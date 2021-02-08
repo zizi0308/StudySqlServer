@@ -1,22 +1,22 @@
-USE tempdb;
+ï»¿USE tempdb;
 go
 
 create database sqlDB;
 go
 
---DB »ı¼º
+--DB ìƒì„±
 use sqlDB;
 go
-create table userTbl -- È¸¿øÅ×ÀÌºí
+create table userTbl -- íšŒì›í…Œì´ë¸”
 (
-	userID	char(8)	not null primary key, -- »ç¿ëÀÚ¾ÆÀÌµğ
-	userName	nvarchar(10) not null, -- ÀÌ¸§
-	birthYear	int not null, -- Ãâ»ı³âµµ
-	addr	nchar(2) not null, -- Áö¿ª
-	mobile1	char(3), -- ÈŞ´ëÆù ±¹¹ø(010~019)
-	mobile2 char(8), -- ÈŞ´ëÆù ³ª¸ÓÁö (8ÀÚ¸®)
-	height	SMALLINT, -- Å°
-	mDate	DATE -- È¸¿ø°¡ÀÔÀÏ
+	userID	char(8)	not null primary key, -- ì‚¬ìš©ìì•„ì´ë””
+	userName	nvarchar(10) not null, -- ì´ë¦„
+	birthYear	int not null, -- ì¶œìƒë…„ë„
+	addr	nchar(2) not null, -- ì§€ì—­
+	mobile1	char(3), -- íœ´ëŒ€í° êµ­ë²ˆ(010~019)
+	mobile2 char(8), -- íœ´ëŒ€í° ë‚˜ë¨¸ì§€ (8ìë¦¬)
+	height	SMALLINT, -- í‚¤
+	mDate	DATE -- íšŒì›ê°€ì…ì¼
 );
 go
 create table buyTbl
