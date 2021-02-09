@@ -4,7 +4,7 @@ select * from ClubTbl;
 select * from ClubRegTbl;
 */
 
---(Standard SQL) 일치하는 값만 보여주는 inner join >> 교집합
+--(Standard SQL) 일치하는 값만 보여주는 inner join
 select s.id, s.stdName, c.clubName, c.buildingNum
   from StdTbl as s
  inner join ClubRegTbl as r
@@ -28,7 +28,7 @@ select s.id, s.stdName, c.clubName, c.buildingNum
 
 
 
---조건에 일치하지 않는 값도 보여주는 outer join(외부조인) >> 합집합
+--조건에 일치하지 않는 값도 보여주는 outer join(외부조인)
 select s.id, s.stdName, c.clubName, c.buildingNum
   from StdTbl as s
  left outer join ClubRegTbl as r
@@ -39,14 +39,16 @@ select s.id, s.stdName, c.clubName, c.buildingNum
 -- userTbl / buyTbl 구매하지 않은 사람들도 나옴
 select u.userName, u.addr, b.prodName, b.price
   from userTbl as u
-  left outer join buyTbl as b -- userTbl 기준 (join 왼쪽기준) userTbl안에 있는 모든 열 + buyTbl에 있는 공통부분을 얻게됨
+  left outer join buyTbl as b -- userTbl 기준 (join 왼쪽기준)
     on u.userID = b.userID;
 
 select u.userName, u.addr, b.prodName, b.price
   from userTbl as u
-  right outer join buyTbl as b -- buyTbl 기준 (join 오른쪽 기준) >> buyTbl안에 있는 모든 열 + userTbl에 있는 공통부분을 얻게됨
+  right outer join buyTbl as b -- buyTbl 기준 (join 오른쪽 기준) >> 구매한 사람만 기준을 잡아서 데이터가 충분하지않음
     on u.userID = b.userID;
- -- 공통부분은 똑같이 출력되지만 기준 밖에 있는 것들은 NULL로 입력된다.
+-- 공통부분에는 값이 입력 아닌부분에는 null이 나옴
+select userName, addr
+  from userTbl;
 
-select *
-  from buyTbl
+select prodName, price
+  from buyTbl;
