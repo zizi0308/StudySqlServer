@@ -72,6 +72,8 @@ commit;
 begin tran;
 delete from CateTbl where cateidx = 'I0003';
 
+delete from CateTbl where cateidx in ('I0001', 'I0002'); -- 두개이상 지울 때
+
 select * from CateTbl;
 
 rollback;
