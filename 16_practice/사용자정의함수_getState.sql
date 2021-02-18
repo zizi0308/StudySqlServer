@@ -1,4 +1,5 @@
-﻿create or alter function ufn_getState(@rentalState char(1))
+﻿-- 사용자 정의함수는 항상 새쿼리에서 실행하기
+create or alter function ufn_getState(@rentalState char(1))
 returns nvarchar(5)
 
 as
